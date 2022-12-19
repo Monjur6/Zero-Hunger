@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Zero_Hunger.DB.Location>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_layer1.cshtml";
+}
+
+<style>
+    .header a.admin {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .plus-icon:after {
+        content: "\f067";
+        font-family: 'FontAwesome';
+        padding-left: 5px;
+    }
+</style>
+<link href="~/Content/table.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/admin_login.css" rel="stylesheet" type="text/css" />
+<a id="sub2" href="../Location/Create">Create New Location</a>
+<br />
+<br />
+<b><span class="alert-warning"> @TempData["error"] </span></b>
+
+<table class="styled-table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LocationName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,82 @@
+﻿@model Zero_Hunger.DB.Employee
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_layer1.cshtml";
+}
+<style>
+    .header a.admin {
+        background-color: dodgerblue;
+        color: white;
+    }
+</style>
+<link href="~/Content/admin_login.css" rel="stylesheet" type="text/css" />
+<a id="sub2" href="../Index">Back To List</a><a id="sub1" href="../Index">Edit</a>
+<br /><br />
+<fieldset>
+    <legend>Details</legend>
+
+    <div>
+
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DOB)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DOB)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Location)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Location)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Phone)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Phone)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Username)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Username)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+
+        </dl>
+    </div>
+</fieldset>
+
+<br />

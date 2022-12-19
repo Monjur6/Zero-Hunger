@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "AdminPanel";
+    Layout = "~/Views/Shared/_layer1.cshtml";
+}
+<style>
+    .header a.admin {
+        background-color: dodgerblue;
+        color: white;
+    }
+</style>
+<link href="~/Content/admin_login.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/admin_panel.css" rel="stylesheet" type="text/css" />
+<b><span class="alert-warning"> @TempData["error"] </span></b>
+<body>
+     
+
+    <table width="100%" table-layout: fixed>
+        <tr>
+            <th>
+                <div width="25%" class="container2" style="text-align: left;">
+                    <h2 style="margin-bottom: 8px;"><span><b style="color: dodgerblue">Employee</b></span> Operations</h2>
+                    <hr />
+                   
+                        <a href="../Employee/Index">Employee List</a>
+                        <a href="../Employee/Create">Create Employee Account</a>
+                        <a href="../Employee/Index">Edit Enployee account</a>
+                        <a href="../Employee/Index">Delete Employee Account</a>
+                    
+                </div>
+            </th>
+            <th >
+                <div width="25%" class="container2" style="text-align: left;">
+                    <h2 style="margin-bottom: 8px;"><span><b style="color: dodgerblue">Food Management</b></span> Operations</h2>
+                    <hr />
+                    <a href="../FM/OnlyCollect">Assign Employee To Collect Foods</a>
+                    <a href="../FM/OnlyDistribute">Assign Employee To Distribute Foods</a>
+                    <a href="../FM/Index">See ALL Donated Food List</a>
+                    <a href="../FM/Track">Track food Collection And Distribution</a>
+
+                </div>
+            </th>
+            <th >
+                <div width="25%" class="container2" style="text-align: left;">
+                    <h2 style="margin-bottom: 8px;"><span><b style="color: dodgerblue">Location</b></span> Operations</h2>
+                        <hr />
+                        <a href="../Location/Index">Location List</a>
+                        <a href="../Location/Create">Create New Location</a>
+                        <a href="../Location/Index">Edit Location</a>
+                        <a href="../Location/Index">Delete Existing Location</a>
+                </div>
+            </th>
+            <th>
+                <div width="25%" class="container2" style="text-align: left;">
+                    <h2 style="margin-bottom: 8px;"><span><b style="color: dodgerblue">Distribution</b></span> Operations</h2>
+                    <hr />
+                    <a href="../FM/OnlyDistribute">Need To Distribute </a>
+                    <a href="../FM/Processed">Alrady Distributed</a>
+                </div>
+            </th>
+        </tr>
+
+    </table>
+</body>
+

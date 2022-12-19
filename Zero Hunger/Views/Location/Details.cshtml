@@ -1,0 +1,35 @@
+﻿@model Zero_Hunger.DB.Location
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_layer1.cshtml";
+}
+<style>
+    .header a.admin {
+        background-color: dodgerblue;
+        color: white;
+    }
+</style>
+<link href="~/Content/admin_login.css" rel="stylesheet" type="text/css" />
+<a id="sub2" href="../Index">Back To List</a><a id="sub1" href="../Index">Edit</a>
+<br />
+<br />
+<fieldset>
+    <legend>Create Location</legend>
+
+    <div>
+        <h4>Location</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.LocationName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LocationName)
+            </dd>
+
+        </dl>
+    </div>
+</fieldset>
+<br />

@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Zero_Hunger.DB.Donation>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_layer1.cshtml";
+}
+
+<style>
+    .header a.admin {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .plus-icon:after {
+        content: "\f067";
+        font-family: 'FontAwesome';
+        padding-left: 5px;
+    }
+</style>
+<link href="~/Content/table.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/admin_login.css" rel="stylesheet" type="text/css" />
+<a id="sub2" href="../Donate/CollectionRequest">Make a new Donation</a>
+<br />
+<br />
+<b><span class="alert-warning"> @TempData["error"] </span></b>
+
+<table class="styled-table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpareIn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DonarName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpareIn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DonarName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,83 @@
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\Zero Hunger.dll.config
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\Zero Hunger.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\Zero Hunger.pdb
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\csc.exe
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\csc.exe.config
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\csc.rsp
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\csi.exe
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\csi.exe.config
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\csi.rsp
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.AppContext.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Console.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.IO.Compression.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Net.Http.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.ValueTuple.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\vbc.exe
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\vbc.exe.config
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\vbc.rsp
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\Antlr3.Runtime.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\Newtonsoft.Json.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.Helpers.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.Mvc.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.Optimization.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.Razor.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.WebPages.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\WebGrease.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.Helpers.xml
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.Mvc.xml
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.Optimization.xml
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.Razor.xml
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.WebPages.xml
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\Newtonsoft.Json.xml
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\Antlr3.Runtime.pdb
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\obj\Debug\Zero Hunger.csproj.AssemblyReference.cache
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\obj\Debug\Zero Hunger.csproj.CoreCompileInputs.cache
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\obj\Debug\Zero Hunger.csproj.CopyComplete
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\obj\Debug\Zero Hunger.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\obj\Debug\Zero Hunger.pdb
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\EntityFramework.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\EntityFramework.xml
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\EntityFramework.SqlServer.dll
+C:\Users\Ne\Desktop\git\Zero_Hunger\Zero Hunger\Zero Hunger\bin\EntityFramework.SqlServer.xml

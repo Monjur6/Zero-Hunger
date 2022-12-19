@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/admin_login.css" rel="stylesheet" type="text/css" />
+<style>
+    .header a.Home {
+        background-color: dodgerblue;
+        color: white;
+    }
+</style>
+<body>
+    <b><span class="alert-warning"> @TempData["error"] </span></b>
+    <div class="container2" style="text-align: center;">
+        <h2 style="margin-bottom: 12px;"><span><b style="color: dodgerblue">Our</b></span> Mission</h2>
+        <p>Provide support to underprivileged section of the society specially extreme poor/ homeless and orphan children through quality education ,nourishment &amp; shelter to make them resources for the nation.</p>
+    </div>
+    @*<div class="mission" style="text-align: center; ">
+            <h2 style="margin-bottom: 12px;"><span><b style="color: dodgerblue">Our</b></span> Mission</h2>
+            <p>Provide support to underprivileged section of the society specially extreme poor/ homeless and orphan children through quality education ,nourishment &amp; shelter to make them resources for the nation.</p>
+        </div>*@
+    <div class="container">
+        <img src="@Url.Content("~/Content/Images/Img1.jpg")" alt="Notebook" style="width: 155%; height: 400px">
+        <div class="content">
+            <h1>Share the warmth</h1>
+            <p>We can make a strong relationship with underprivileged children through sharing food. We are selling the food for 1 Taka that they do not feel that they are begging.</p>
+            <a class="button-1">Donate</a>
+        </div>
+    </div>
+    <div class="container2">
+        <h2 style="margin-bottom: 12px; text-align: center;"><span><b style="color: dodgerblue">Work with</b></span> us</h2>
+        <h4 class="text-center" style="text-align: center;  ">
+            Our works are designed to provide essential food support to underserved areas<br> in the form of food or packaged food products depending on the need.
+            Our goal is to ensure, Feed people not landfills.<br /><br />
+            <a class="button-1">Join us</a>
+        </h4>
+    </div>
+
+
+</body>
+
+
+
+

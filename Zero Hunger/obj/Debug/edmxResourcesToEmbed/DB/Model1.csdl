@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ZHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DOB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Collection">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpId" Type="Int32" Nullable="false" />
+    <Property Name="DonationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Donation" Relationship="Self.FK_Collections_Donations" FromRole="Collections" ToRole="Donations" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_Collections_Employees" FromRole="Collections" ToRole="Employees" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Donation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ExpareIn" Type="Int32" Nullable="false" />
+    <Property Name="DonarName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Collections" Relationship="Self.FK_Collections_Donations" FromRole="Donations" ToRole="Collections" />
+    <NavigationProperty Name="Location1" Relationship="Self.FK_Donations_Locations" FromRole="Donations" ToRole="Locations" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DOB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Collections" Relationship="Self.FK_Collections_Employees" FromRole="Employees" ToRole="Collections" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="LocationName" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LocationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Donations" Relationship="Self.FK_Donations_Locations" FromRole="Locations" ToRole="Donations" />
+  </EntityType>
+  <EntityType Name="Loca">
+    <Key>
+      <PropertyRef Name="LocationName" />
+    </Key>
+    <Property Name="LocationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Collections_Donations">
+    <End Role="Donations" Type="Self.Donation" Multiplicity="1" />
+    <End Role="Collections" Type="Self.Collection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Donations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Collections">
+        <PropertyRef Name="DonationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Collections_Employees">
+    <End Role="Employees" Type="Self.Employee" Multiplicity="1" />
+    <End Role="Collections" Type="Self.Collection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Collections">
+        <PropertyRef Name="EmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Donations_Locations">
+    <End Role="Locations" Type="Self.Location" Multiplicity="1" />
+    <End Role="Donations" Type="Self.Donation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="LocationName" />
+      </Principal>
+      <Dependent Role="Donations">
+        <PropertyRef Name="Location" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ZHEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admins" EntityType="Self.Admin" />
+    <EntitySet Name="Collections" EntityType="Self.Collection" />
+    <EntitySet Name="Donations" EntityType="Self.Donation" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="Locations" EntityType="Self.Location" />
+    <EntitySet Name="Locas" EntityType="Self.Loca" />
+    <AssociationSet Name="FK_Collections_Donations" Association="Self.FK_Collections_Donations">
+      <End Role="Donations" EntitySet="Donations" />
+      <End Role="Collections" EntitySet="Collections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Collections_Employees" Association="Self.FK_Collections_Employees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Collections" EntitySet="Collections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Donations_Locations" Association="Self.FK_Donations_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Donations" EntitySet="Donations" />
+    </AssociationSet>
+    <EntitySet Name="Donars" EntityType="ZHModel.Donar" />
+  </EntityContainer>
+  <EntityType Name="Donar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

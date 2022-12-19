@@ -1,0 +1,67 @@
+﻿<style>
+
+    .header {
+        overflow: hidden;
+        background-color: #f1f1f1;
+        padding: 20px 10px;
+    }
+
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 15px;
+            border-radius: 4px;
+        }
+
+            .header a.logo {
+                font-size: 35px;
+                font-weight: bold;
+                color: #339933;
+            }
+
+            .header a:hover {
+                background-color: gray;
+                color: black;
+            }
+
+            .header a.active {
+                background-color: dodgerblue;
+                color: white;
+            }
+
+    /* Float the link section to the right */
+    .header-right {
+        float: right;
+    }
+
+    .header-left {
+        float: left;
+    }
+
+    div.header {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        border: 2px;
+    }
+</style>
+<body>
+    <div class="header">
+        <a href="../ZH/Home" class="logo"><b>Zero Hunger</b></a>
+        <div class="header-right">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a class="admin" href="../Admin/AdminPanel">Profile - @User.Identity.Name</a>
+            }
+            <a class="Home" href="../ZH/Home">Home</a>
+            <a class="Change-password" href="../Admin/ChangePassword">Change password</a>
+            <a class="Logout" href="../Admin/Logout">Logout</a>
+        </div>
+    </div>
+   
+
+</body>

@@ -1,0 +1,89 @@
+﻿@model Zero_Hunger.Models.donation_Class
+@{
+    ViewBag.Title = "Distribute";
+    Layout = "~/Views/Shared/_layer1.cshtml";
+}
+
+<style>
+    .header a.admin {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .plus-icon:after {
+        content: "\f067";
+        font-family: 'FontAwesome';
+        padding-left: 5px;
+    }
+</style>
+<link href="~/Content/table.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/admin_login.css" rel="stylesheet" type="text/css" />
+<a id="sub2" href="../Index">Go back</a>
+<br />
+<br />
+<b><span class="alert-warning"> @TempData["error"] </span></b>
+<br />
+
+
+<fieldset>
+    <legend> <b>Assign Employee</b> </legend>
+    <form action="" method="POST">
+        <h3>Distribution Details</h3><hr />
+        @foreach (var Idet in Model.don)
+        {
+            <br>
+            <label>Donation Id: </label>
+            <input type="text" readonly name="DonId" value="@Idet.Id">
+
+            <br>
+            <label>Collectable Location: </label>
+            <input type="text" readonly name="DonLoc" value="@Idet.Location">
+
+            <br>
+            <label>Collectable Address: </label>
+            <input type="text" readonly name="DonAdd" value="@Idet.Address">
+
+            <br>
+            <label>Food Expare In: </label>
+            <input type="text" readonly name="ExpIn" value="@Idet.ExpareIn">
+        }
+        <h3>Select Employee</h3><hr />
+        <label for="cars">Select Employee:</label>
+        <select name="empId" id="cars">
+            @foreach (var item in Model.emp)
+            {
+
+                <option value="@item.Id">@item.Name - @item.Location - (Assigned Job:@Model.col.Count(x => x.EmpId == item.Id && x.Status != "Done") ) </option>
+
+            }
+        </select>
+        <br />
+        <br>
+        @foreach (var i in Model.col)
+        {
+            foreach (var j in Model.don)
+            {
+                if (j.Id.Equals(i.DonationId))
+                {
+                    if (i.Status != "In Process")
+                    {
+                        <a id="sub2" href="../Index">Go Back</a>
+                        <input id="sub1" type="submit" name="Login" value="Assign">
+                    }
+                    else
+                    {
+                        <a id="sub2" href="../Index">Go Back</a>
+                        <input id="sub1" readonly value="In Process(Wait)">
+                    }
+                }
+            }
+        }
+        @*<a id="sub2" href="../Index">Go Back</a>
+        <input id="sub1" type="submit" name="Login" value="Assign">*@
+    </form>
+    <span class="alert-warning" style="color:orangered"><b>@TempData["error"]</span>
+    <br><br>
+</fieldset>
+<br />
+<br />
+

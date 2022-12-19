@@ -1,0 +1,82 @@
+﻿@model Zero_Hunger.DB.Employee
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_layer1.cshtml";
+}
+<style>
+    .header a.admin {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+</style>
+<link href="~/Content/admin_login.css" rel="stylesheet" type="text/css" />
+<fieldset>
+    <legend>Create employee account</legend>
+    @using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Name) } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DOB, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.DOB) } })
+                @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Location) } })
+                @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Phone) } })
+                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Email) } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Username) } })
+                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Password) } })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <a id="sub2" href="./Index">Back to List</a>
+                <input id="sub1" type="submit" name="Register" value="Register">
+            </div>
+        </div>
+    </div>
+}
+</fieldset><br />

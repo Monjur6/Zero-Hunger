@@ -1,0 +1,138 @@
+﻿
+    *
+{
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid;
+    width: 500px;
+    margin: auto;
+}
+
+.e1 {
+    color: red;
+}
+
+a:hover {
+    background-color: gray;
+    color: black;
+}
+
+#sub1:hover {
+    background-color: #3399ff;
+    opacity: 0.8;
+}
+
+#sub1 {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+#sub2:hover {
+    background-color: gray;
+    color: black;
+}
+
+#sub2 {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+#sub1, #sub2 {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+#sub1 {
+    width: auto;
+    padding: 10px 35px;
+    background-color: #04AA6D;
+}
+
+#sub2 {
+    width: auto;
+    padding: 10px 35px;
+    background-color: #f44336;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.container {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    /* margin: 0 auto; */ /* Center it */
+}
+
+    .container .content {
+        position: absolute; /* Position the background text */
+        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1; /* Grey text */
+        width: 150%; /* Full width */
+        padding: 20px; /* Some padding */
+    }
+
+/* CSS */
+.button-1 {
+    background-color: dodgerblue;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+    .button-1:hover,
+    .button-1:focus {
+        background-color: #F082AC;
+    }
+
+.container2 {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+    /* Clear floats after containers */
+    .container2::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+

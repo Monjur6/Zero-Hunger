@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Zero_Hunger.DB.Collection>
+
+@{
+    ViewBag.Title = "AdminPanel";
+    Layout = "~/Views/Shared/_L2.cshtml";
+}
+<style>
+    .header a.admin {
+        background-color: dodgerblue;
+        color: white;
+    }
+</style>
+<link href="~/Content/admin_login.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/admin_panel.css" rel="stylesheet" type="text/css" />
+<b><span class="alert-warning"> @TempData["error"] </span></b>
+<body>
+    <style>
+        .header a.admin {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .plus-icon:after {
+            content: "\f067";
+            font-family: 'FontAwesome';
+            padding-left: 5px;
+        }
+    </style>
+    <link href="~/Content/table.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/admin_login.css" rel="stylesheet" type="text/css" />
+    <br />
+    <br />
+    <b><span class="alert-warning"> @TempData["error"] </span></b>
+    <br />
+
+    <table class="styled-table">
+        <tr>
+            <th>
+                <b>Donation Id</b>
+            </th>
+            <th>
+                <b>Status</b>
+            </th>
+            <th>
+                <b>Location</b>
+            </th>
+            <th>
+                <b>Expare Food In</b>
+            </th>
+            <th>
+                <b>Address</b>
+            </th>
+            <th>
+                <b>Asssignment</b>
+            </th>
+
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @if (item.Employee.Username == @User.Identity.Name && item.Status != "Done")
+                {
+
+                    <td><b>@item.DonationId</b></td>
+
+                    <td><b>@item.Status</b></td>
+
+                    <td><b>@item.Donation.Location</b></td>
+
+                    <td><b>@item.Donation.ExpareIn</b></td>
+
+                    <td><b>@item.Donation.Address</b></td>
+
+                    <td>
+                        @if (@item.Donation.Status == "Deliverable")
+                        {
+                            <b>To Collect</b>
+                        }
+                        else if (@item.Donation.Status == "Processed")
+                        {
+                            <b>To Distribute</b>
+                        }
+                        else
+                        {
+                            <b>Unknown</b>
+                        }
+                    </td>
+
+                    <td>
+
+                        <p id="sub2">@Html.ActionLink("Complete", "Complete", new { id = item.Id })</p>
+
+
+                    </td>
+                }
+            </tr>
+        }
+
+    </table>

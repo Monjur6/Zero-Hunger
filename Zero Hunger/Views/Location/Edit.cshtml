@@ -1,0 +1,42 @@
+﻿@model Zero_Hunger.DB.Location
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_layer1.cshtml";
+}
+
+<style>
+    .header a.admin {
+        background-color: dodgerblue;
+        color: white;
+    }
+</style>
+<link href="~/Content/admin_login.css" rel="stylesheet" type="text/css" />
+<br />
+<fieldset>
+    <legend>Edit Location</legend>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.LocationName, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.LocationName) } })
+                    @Html.ValidationMessageFor(model => model.LocationName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <a id="sub2" href="../Index">Back to List</a>
+                    <input id="sub1" type="submit" name="Register" value="Edit">
+                </div>
+            </div>
+        </div>
+    }
+
+</fieldset>
